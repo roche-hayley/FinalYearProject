@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>UCC Tutor Hours</title>
+    <title>Logged Hours</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="FinalYearProjectBootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,11 +17,14 @@
     <!-- MetisMenu CSS -->
     <link href="FinalYearProjectBootstrap/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="FinalYearProjectBootstrap/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="FinalYearProjectBootstrap/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="FinalYearProjectBootstrap/dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="FinalYearProjectBootstrap/vendor/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="FinalYearProjectBootstrap/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -248,7 +251,7 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="tutorProfile.html"><i class="fa fa-user fa-fw"></i> Profile</a>
+                        <li><a href="tutorProfile.html"><i class="fa fa-user fa-fw"></i> Tutor Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -300,195 +303,156 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
+        
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Enter Hours</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- /.row -->
-            
-                    <!-- /.panel -->
+            <form action="loghours.php" method='post'>
+                <div class="row">
+                <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> How this works
-                        </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <ul class="timeline">
-                                <li>
-                                    <div class="timeline-badge"><i class="fa fa-check"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Login</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>LOGID:</label>
+                                            <input class="form-control" placeholder="LOGID" name="logid">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p>Login with your student credentials</p>
+                                        <div class="form-group">
+                                            <label>Student Number:</label>
+                                            <input class="form-control" placeholder="StudentID" name="studentid">
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-graduation-cap"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Log your hours</h4>
+                                        <div class="form-group">
+                                            <label>Student Name:</label>
+                                            <input class="form-control" placeholder="Surname, Forename" name="studentname">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p>Go to the 'Log your hours' section of the website and follow the online form to log your tutor hours.</p>
+                                        <div class="form-group">
+                                            <label>Week Commencing:</label>
+                                            <input class="form-control" placeholder="Week Commencing" name="week">
                                         </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge danger"><i class="fa fa-save"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Save your</h4>
+                                        <div class="form-group">
+                                            <label>Date of Tutorial:</label>
+                                            <input class="form-control" placeholder="Date of Tutorial" name="date">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p>Make sure to save all of your details at the end of the form.</p>
+                                        <div class="form-group">
+                                            <label>Course Code:</label>
+                                            <input class="form-control" placeholder="Course Code" name="coursecode">
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Get paid!</h4>
+                                        <div class="form-group">
+                                            <label>Lecturer:</label>
+                                            <input class="form-control" placeholder="Lecturer" name="lecturer">
                                         </div>
-                                        <div class="timeline-body">
-                                            <p>You will then get paid according to your logged hours at the end of the month through your stripe account.</p>
+                                        <div class="form-group">
+                                            <label>Location:</label>
+                                            <input class="form-control" placeholder="Location" name="location">
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <div class="form-group">
+                                            <label>Time of Tutorial:</label>
+                                            <select class="form-control" name="timeoftutorial">
+                                                <option>9-10am</option>
+                                                <option>10-11am</option>
+                                                <option>11-12pm</option>
+                                                <option>12-1pm</option>
+                                                <option>1-2pm</option>
+                                                <option>2-3pm</option>
+                                                <option>3-4pm</option>
+                                                <option>4-5pm</option>
+                                                <option>5-6pm</option>
+                                                <option>6-7pm</option>
+                                                <option>7-8pm</option>
+                                                <option>8-9pm</option>
+                                                <option>9-10pm</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Actual Hours Worked:</label>
+                                            <select class="form-control" name="hoursworked">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-default" name="loghours">Submit Button</button>
+                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-8 -->
-               
-                        
+                <!-- /.col-lg-12 -->
+            </div>
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
+       
+            </form>
+            
+    <!-- https://stackoverflow.com/questions/37367992/php-inserting-values-from-the-form-into-mysql -->
+    <?php
+    $mysqli = new mysqli("localhost", "root", "albertroad", "fypdatabase");
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+    ?>
+            
+    <?php
+    if(isset($_POST['save'])){
+        $sql = "INSERT INTO logged_hours (logid, studentid, studentname)
+        VALUES (?,?,?)";
+    }
+    
+    $stmt = mysqli_prepare($sql);
+    $stmt->bind_param("sss", $_POST['logid'], $_POST['studentid'], $_POST['studentname']);
+    $stmt->execute();
+    ?>
+    </div>
+    <!-- /#wrapper -->       
+           
 
     </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="FinalYearProjectBootstrap/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="FinalYearProjectBootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="FinalYearProjectBootstrap/vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="../vendor/raphael/raphael.min.js"></script>
-    <script src="../vendor/morrisjs/morris.min.js"></script>
-    <script src="../data/morris-data.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="FinalYearProjectBootstrap/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="FinalYearProjectBootstrap/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="FinalYearProjectBootstrap/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="FinalYearProjectBootstrap/dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
 
 </body>
 
