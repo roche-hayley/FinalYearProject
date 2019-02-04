@@ -8,7 +8,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT student_id FROM tutors WHERE username = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT LECTURER_ID FROM lecturers WHERE LECTURER_FIRSTNAME = '$myusername' and LECTURER_PASSWORD = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       // $active = $row['active'];
@@ -21,7 +21,7 @@
         // session_register("username");
          $_SESSION['login_user'] = $myusername;
          
-         header("location: index.php");
+         header("location: lecturerindex.php");
       }else {
          $error = "Your Login Name or Password is invalid";
       }
@@ -61,7 +61,7 @@
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
-                  <span>Click here for<a href="lecturerlogin.php"> lecturer login</a></span>
+                  <span>Click here for<a href="login.php"> tutor login</a></span>
                </form>
                
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>

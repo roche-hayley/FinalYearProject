@@ -58,200 +58,10 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>Read All Messages</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-messages -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-tasks">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 1</strong>
-                                        <span class="pull-right text-muted">40% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 2</strong>
-                                        <span class="pull-right text-muted">20% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                            <span class="sr-only">20% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 3</strong>
-                                        <span class="pull-right text-muted">60% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 4</strong>
-                                        <span class="pull-right text-muted">80% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete (danger)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Tasks</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-tasks -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="tutorProfile.html"><i class="fa fa-user fa-fw"></i> Tutor Profile</a>
+                        <li><a href="tutorProfile.html"><i class="fa fa-user fa-fw"></i> Profile</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -321,23 +131,41 @@
                                 <div class="col-lg-6">
                                     <form role="form">
                                         <div class="form-group">
-                                            <label>LOGID:</label>
-                                            <input class="form-control" placeholder="LOGID" name="logid">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Student Number:</label>
-                                            <input class="form-control" placeholder="StudentID" name="studentid">
+                                            <label>Student Number:</label><br>
+                                            <?php
+                                        // https://www.sitepoint.com/community/t/populate-dropdown-menu-from-mysql-database/6481/5
+                                        $conn = new mysqli('localhost', 'root', 'albertroad', 'fypdatabase') 
+                                        or die ('Cannot connect to db');
+
+                                            $result = $conn->query("select student_id from tutors");
+
+                                            echo "<html>";
+                                            echo "<body>";
+                                            echo "<select name='studentid'>";
+
+                                            while ($row = $result->fetch_assoc()) {
+
+                                                          unset($id);
+                                                          $id = $row['student_id'];
+                                                          echo '<option value="'.$id.'">'.$id.'</option>';
+
+                                        }
+
+                                            echo "</select>";
+                                            echo "</body>";
+                                            echo "</html>";
+                                        ?>
                                         </div>
                                         <div class="form-group">
                                             <label>Student Name:</label>
-                                            <input class="form-control" placeholder="Surname, Forename" name="studentname">
+                                            <input class="form-control" placeholder="Student Name" name="studentname">                                             
                                         </div>
                                         <div class="form-group">
-                                            <label>Week Commencing:</label>
+                                            <label>Week Commencing: YYYY-MM-DD</label>
                                             <input class="form-control" placeholder="Week Commencing" name="week">
                                         </div>
                                         <div class="form-group">
-                                            <label>Date of Tutorial:</label>
+                                            <label>Date of Tutorial: YYYY-MM-DD</label>
                                             <input class="form-control" placeholder="Date of Tutorial" name="date">
                                         </div>
                                         <div class="form-group">
@@ -345,8 +173,31 @@
                                             <input class="form-control" placeholder="Course Code" name="coursecode">
                                         </div>
                                         <div class="form-group">
-                                            <label>Lecturer:</label>
-                                            <input class="form-control" placeholder="Lecturer" name="lecturer">
+                                            <label>Lecturer:</label><br>
+                                            <?php
+                                        // https://www.sitepoint.com/community/t/populate-dropdown-menu-from-mysql-database/6481/5
+                                        $conn = new mysqli('localhost', 'root', 'albertroad', 'fypdatabase') 
+                                        or die ('Cannot connect to db');
+
+                                            $result = $conn->query("select LECTURER_FIRSTNAME, LECTURER_LASTNAME from lecturers");
+
+                                            echo "<html>";
+                                            echo "<body>";
+                                            echo "<select name='lecturer'>";
+
+                                            while ($row = $result->fetch_assoc()) {
+
+                                                          unset($firstname, $lastname);
+                                                          $firstname = $row['LECTURER_FIRSTNAME'];
+                                                          $lastname = $row['LECTURER_LASTNAME']; 
+                                                          echo '<option value="'.$firstname.'">'.$lastname.'</option>';
+
+                                        }
+
+                                            echo "</select>";
+                                            echo "</body>";
+                                            echo "</html>";
+                                        ?>
                                         </div>
                                         <div class="form-group">
                                             <label>Location:</label>
@@ -368,6 +219,13 @@
                                                 <option>7-8pm</option>
                                                 <option>8-9pm</option>
                                                 <option>9-10pm</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Group:</label>
+                                            <select class="form-control" name="groupletter">
+                                                <option>A</option>
+                                                <option>B</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -399,28 +257,31 @@
         <!-- /#page-wrapper -->
        
             </form>
-            
-    <!-- https://stackoverflow.com/questions/37367992/php-inserting-values-from-the-form-into-mysql -->
-    <?php
-    $mysqli = new mysqli("localhost", "root", "albertroad", "fypdatabase");
+<!-- https://www.w3schools.com/sql/sql_insert.asp -->            
+   <?php
+$servername = "localhost";
+$username = "root";
+$password = "albertroad";
+$dbname = "fypdatabase";
 
-    /* check connection */
-    if (mysqli_connect_errno()) {
-        printf("Connect failed: %s\n", mysqli_connect_error());
-        exit();
-    }
-    ?>
-            
-    <?php
-    if(isset($_POST['save'])){
-        $sql = "INSERT INTO logged_hours (logid, studentid, studentname)
-        VALUES (?,?,?)";
-    }
-    
-    $stmt = mysqli_prepare($sql);
-    $stmt->bind_param("sss", $_POST['logid'], $_POST['studentid'], $_POST['studentname']);
-    $stmt->execute();
-    ?>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "INSERT INTO logged_hours (STUDENT_ID, STUDENT_NAME, WEEK, DATE_OF_TUT, COURSE_CODE, LECTURER, LOCATION, TUT_TIME, GROUP_LETTER, TOTAL_HOURS)
+VALUES ('$_POST[studentid]','$_POST[studentname]', '$_POST[week]', '$_POST[date]', '$_POST[coursecode]', '$_POST[lecturer]', '$_POST[location]', '$_POST[timeoftutorial]', '$_POST[groupletter]', '$_POST[hoursworked]');";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
     </div>
     <!-- /#wrapper -->       
            
