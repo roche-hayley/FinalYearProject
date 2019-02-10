@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+include ('session.php');
+?>
 <head>
 
     <meta charset="utf-8">
@@ -58,7 +60,7 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user fa-fw"></i>Hello <?php echo $user_check ?><i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="tutorProfile.html"><i class="fa fa-user fa-fw"></i> Profile</a>
@@ -66,7 +68,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -149,8 +151,8 @@
                                 if ($conn-> connect_error) {
                                     die("Connection failed:". $conn-> connect_error);
                                 }
-                                
-                                $sql = "SELECT STUDENT_ID, STUDENT_NAME, WEEK, DATE_OF_TUT, COURSE_CODE, LECTURER, LOCATION, TUT_TIME, GROUP_LETTER, TOTAL_HOURS FROM LOGGED_HOURS";
+                                // https://stackoverflow.com/questions/20828182/retrieving-data-from-mysql-database-using-session-username 
+                                $sql = "SELECT STUDENT_ID, STUDENT_NAME, WEEK, DATE_OF_TUT, COURSE_CODE, LECTURER, LOCATION, TUT_TIME, GROUP_LETTER, TOTAL_HOURS FROM LOGGED_HOURS WHERE STUDENT_NAME = '".$_SESSION['login_user']."'";
                                 $result = $conn-> query($sql);
                                 
                                 if ($result-> num_rows > 0) {

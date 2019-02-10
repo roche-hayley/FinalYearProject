@@ -8,17 +8,17 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT LECTURER_ID FROM lecturers WHERE LECTURER_FIRSTNAME = '$myusername' and LECTURER_PASSWORD = '$mypassword'";
+      $sql = "SELECT lecturer_id FROM lecturers WHERE lecturer_firstname = '$myusername' and lecturer_password = '$mypassword'";
       $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      // $active = $row['active'];
+      $row = mysqli_fetch_array($result);
+      $active = $row['active'];
       
       $count = mysqli_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-        // session_register("username");
+        session_register("username");
          $_SESSION['login_user'] = $myusername;
          
          header("location: lecturerindex.php");
@@ -30,7 +30,7 @@
 <html>
    
    <head>
-      <title>Tutor Login Page</title>
+      <title>Lecturer Login Page</title>
       
       <style type = "text/css">
          body {
@@ -61,7 +61,7 @@
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
-                  <span>Click here for<a href="login.php"> tutor login</a></span>
+                  <span>Click here for <a href="login.php">tutor login</a></span>
                </form>
                
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>

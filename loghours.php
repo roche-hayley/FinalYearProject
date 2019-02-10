@@ -66,7 +66,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -179,7 +179,7 @@
                                         $conn = new mysqli('localhost', 'root', 'albertroad', 'fypdatabase') 
                                         or die ('Cannot connect to db');
 
-                                            $result = $conn->query("select LECTURER_FIRSTNAME, LECTURER_LASTNAME from lecturers");
+                                            $result = $conn->query("select LECTURER_ID, LECTURER_FIRSTNAME, LECTURER_LASTNAME from lecturers");
 
                                             echo "<html>";
                                             echo "<body>";
@@ -187,10 +187,11 @@
 
                                             while ($row = $result->fetch_assoc()) {
 
-                                                          unset($firstname, $lastname);
+                                                          unset($lecturer_id, $firstname, $lastname);
+                                                          $lecturer_id = $row['LECTURER_ID'];
                                                           $firstname = $row['LECTURER_FIRSTNAME'];
                                                           $lastname = $row['LECTURER_LASTNAME']; 
-                                                          echo '<option value="'.$firstname.'">'.$lastname.'</option>';
+                                                          echo '<option value="'.$lecturer_id.'">'.$lastname.'</option>';
 
                                         }
 

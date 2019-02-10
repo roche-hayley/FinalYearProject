@@ -29,6 +29,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </head>
 
@@ -45,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">UCC Tutor Hours</a>
+                <a class="navbar-brand" href="index.php">UCC Tutor Hours</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -107,17 +111,12 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-       <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="container theme-showcase">
-  <h1>Calendar</h1>
-<div id="holder" class="row" ></div>
-</div>
-
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-default">
+                       <div class="container theme-showcase">
+                            <h1>Calendar</h1>
+                                <div id="holder" class="row" ></div>
 
 <script type="text/tmpl" id="tmpl">
   {{ 
@@ -145,6 +144,8 @@
   }
   
   }}
+  
+<div>
   <table class="calendar-table table table-condensed table-tight">
     <thead>
       <tr>
@@ -266,7 +267,12 @@
     </tbody>
     {{ } }}
   </table>
+  </div>
 </script>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
