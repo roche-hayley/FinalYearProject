@@ -95,7 +95,7 @@ include ('session.php');
                             <a href="calender.html"><i class="fa fa-table fa-fw"></i>Calender</a>
                         </li>
                         <li>
-                            <a href="tables.php"><i class="fa fa-pencil fa-fw"></i>Tutor Logged Hours</a>
+                            <a href="confirm_hours.php"><i class="fa fa-pencil fa-fw"></i>Tutor Logged Hours</a>
                         </li>
                         <li>
                             <a href="attendance.html"><i class="fa fa-clock-o fa-fw"></i>Attendance</a>
